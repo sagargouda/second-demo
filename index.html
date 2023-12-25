@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>second</title>
+</head>
+
+<body>
+ <div class="container">
+  <form onsubmit="saveToLocalStorage(event)">
+   <label>Choose Price:</label>
+   <input type="number" name="price" />
+   <label>Choose Dish:</label>
+   <input type="text" name="dname" />
+   <label>Choose a table:</label>
+   <input list="table" name="tab" />
+   <datalist id="table">
+    <option value="table 1">
+    <option value="table 2">
+    <option value="table 3">
+    <option value="table 4">
+   </datalist>
+   <button>Add to bill</button>
+  </form>
+  <h1>Orders</h1>
+  <ul id='listOfitems'>
+  </ul>
+  <div id="table1">
+   <h2>Table 1</h2>
+   <ul id='listOfitemsTable1'></ul>
+  </div>
+  <div id="table2">
+   <h2>Table 2</h2>
+   <ul id='listOfitemsTable2'></ul>
+  </div>
+  <div id="table3">
+   <h2>Table 3</h2>
+   <ul id='listOfitemsTable3'></ul>
+  </div>
+  <div id="table4">
+   <h2>Table 4</h2>
+   <ul id='listOfitemsTable4'></ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js">
+  </script>
+ </div>
+</body>
